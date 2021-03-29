@@ -1,0 +1,96 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+body{
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; 
+    font-family: 'Open Sans',sans-serif;
+    background-color: black;
+}
+
+  
+#container{
+    width:1000px;
+    height:550px;
+    background-image:linear-gradient(rgba(82, 195, 230, 0.931),rgba(83, 190, 34, 0.849)),url(spectrum.jpg);
+    background-size: cover;
+    margin:110px 172px;
+    border-radius: 8px;
+    overflow:hidden;
+}
+#calculator{
+    width:320px;
+    height:520px;
+    background-color: #16a4b1;
+    position: absolute;
+   /*margin-right:-40px; */
+   margin-left:300px;
+   margin-top: 15px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+    overflow:hidden;
+
+   
+}
+
+.display{
+    background-color: #f7ffae;
+     height:153px;
+    width:100%;
+    text-align:right; 
+    padding:20px;
+    font-size:13px;
+    
+}
+.display-1{
+    opacity: .6;
+    font-size:30px;
+    color: rgb(41, 76, 167);
+}
+.display-2{
+   
+    font-size:30px;
+    color: rgb(41, 70, 124);
+    margin-top: 12px;
+}
+.all_buttons{
+   
+    margin-left: auto;
+    margin-right: auto;
+     color:rgb(255, 253, 253);
+     display:grid;
+     grid-template: repeat(4, 1fr)/ repeat(4, 1fr); 
+     
+}
+.temp-result{
+    position: absolute;
+    font-size: 35px;
+    opacity:0.8;
+    color:#df1c1c;
+    font-weight:67px;
+    margin-top: 10px;;
+}
+.btn-0{
+    grid-column: 1/3;
+}
+.button{
+    border:1px solid rgba(71, 255, 209, 0.849);
+    display:inline-block;
+    height:73.3px;
+    text-decoration-color:rgb(255,255,255);
+
+    background-color: rgb(146, 120, 120);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    cursor:pointer;
+}
+.button:hover{
+    background-color: black;
+    color:#f0cdcd
+}
